@@ -5,6 +5,8 @@ namespace Shop.Models
 {
     public class Customer
     {
+        #region Entity Property 
+
         public int CustomerID { get; set; }
         public string Name { get; set; }
         public string lastname { get; set; }
@@ -12,6 +14,9 @@ namespace Shop.Models
         public string Address { get; set; }
         public string Provine { get; set; }
         public string City { get; set; }
+
+        #endregion
+
         public List<Order> Order { get; set; }
     }
 }
